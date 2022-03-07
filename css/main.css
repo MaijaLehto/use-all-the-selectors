@@ -1,5 +1,16 @@
+html {
+  box-sizing: border-box;
+  background-color: #f2f1ed;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: #fdf6e3
+  background-color: #fdf6e3;
 }
 
 header, footer {
@@ -18,7 +29,7 @@ nav ul {
   background-color: #eee8d5;
 }
 
-contents, favs, facts, types {
+#contents, #favs, #facts, #types {
   color: #93a1a1;
 }
 
@@ -28,4 +39,32 @@ contents, favs, facts, types {
 
 .dfn + strong {
   color: #fff;
+}
+
+a:not(.no-highlight) {
+  background-color: #719e07;
+}
+
+[rel="external"] {
+  background-color: #2694d8;
+}
+
+ol li:first-child {
+  color: #719e47;
+}
+
+ol li:last-child {
+  color: #2aa198;
+}
+
+.type li:nth-child(odd) {
+  background-color: #657ba3;
+}
+
+.type li:nth-child(even) {
+  background-color: #586e75;
+}
+
+.types li:nth-child(3n) {
+  background-color: #d04b16;
 }
